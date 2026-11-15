@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 70602632}
   - component: {fileID: 70602634}
   - component: {fileID: 70602633}
+  - component: {fileID: 70602635}
   m_Layer: 5
   m_Name: Warrior_Panel
   m_TagString: Untagged
@@ -370,6 +371,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70602631}
   m_CullTransparentMesh: 1
+--- !u!114 &70602635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70602631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
+  resourceManager: {fileID: 1644739514}
+  unlockButton: {fileID: 1748334950}
+  lockPanel: {fileID: 1960560138}
+  cost: 1
+  costText: {fileID: 581521917}
 --- !u!1 &93354623
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +966,7 @@ GameObject:
   - component: {fileID: 151216842}
   - component: {fileID: 151216844}
   - component: {fileID: 151216843}
+  - component: {fileID: 151216845}
   m_Layer: 5
   m_Name: Fpv_Panel
   m_TagString: Untagged
@@ -1019,6 +1038,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151216841}
   m_CullTransparentMesh: 1
+--- !u!114 &151216845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151216841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
+  resourceManager: {fileID: 0}
+  unlockButton: {fileID: 0}
+  lockPanel: {fileID: 0}
+  cost: 0
+  costText: {fileID: 0}
 --- !u!1 &154249227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,6 +1463,7 @@ GameObject:
   - component: {fileID: 162275029}
   - component: {fileID: 162275028}
   - component: {fileID: 162275031}
+  - component: {fileID: 162275032}
   m_Layer: 5
   m_Name: 50UP_btn
   m_TagString: Untagged
@@ -1550,6 +1587,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangePanel
   currentPanel: {fileID: 0}
   newPanel: {fileID: 0}
+--- !u!114 &162275032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162275026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9580ff415b3eea49b49db53a05f9909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickUpgrade
+  resourceManager: {fileID: 1644739514}
+  moneyClicker: {fileID: 1930813849}
+  cost: 600
+  addedIncome: 100
+  costText: {fileID: 385822366}
 --- !u!1 &185098729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3052,7 @@ GameObject:
   - component: {fileID: 255872874}
   - component: {fileID: 255872876}
   - component: {fileID: 255872875}
+  - component: {fileID: 255872877}
   m_Layer: 5
   m_Name: PVO_Panel
   m_TagString: Untagged
@@ -3069,6 +3124,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255872873}
   m_CullTransparentMesh: 1
+--- !u!114 &255872877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255872873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
+  resourceManager: {fileID: 0}
+  unlockButton: {fileID: 0}
+  lockPanel: {fileID: 0}
+  cost: 0
+  costText: {fileID: 0}
 --- !u!1 &259483928
 GameObject:
   m_ObjectHideFlags: 0
@@ -3776,6 +3848,7 @@ GameObject:
   - component: {fileID: 327166292}
   - component: {fileID: 327166294}
   - component: {fileID: 327166293}
+  - component: {fileID: 327166295}
   m_Layer: 5
   m_Name: Rocket_Panel
   m_TagString: Untagged
@@ -3846,6 +3919,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327166291}
   m_CullTransparentMesh: 1
+--- !u!114 &327166295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327166291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
+  resourceManager: {fileID: 1644739514}
+  unlockButton: {fileID: 0}
+  lockPanel: {fileID: 0}
+  cost: 0
+  costText: {fileID: 0}
 --- !u!1 &336002676
 GameObject:
   m_ObjectHideFlags: 0
@@ -4335,7 +4425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u043A\u0430\u0447\u043A\u0430"
+  m_text: "\u041F\u0440\u043E\u043A\u0430\u0447\u043A\u0430\n100"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4472,7 +4562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u043A\u0430\u0447\u043A\u0430"
+  m_text: "\u041F\u0440\u043E\u043A\u0430\u0447\u043A\u0430\n450"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5017,6 +5107,7 @@ GameObject:
   - component: {fileID: 467339857}
   - component: {fileID: 467339859}
   - component: {fileID: 467339858}
+  - component: {fileID: 467339860}
   m_Layer: 5
   m_Name: Tank_Panel
   m_TagString: Untagged
@@ -5088,6 +5179,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467339856}
   m_CullTransparentMesh: 1
+--- !u!114 &467339860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467339856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
+  resourceManager: {fileID: 1644739514}
+  unlockButton: {fileID: 0}
+  lockPanel: {fileID: 1960560138}
+  cost: 250000
+  costText: {fileID: 0}
 --- !u!1 &467854329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,6 +5626,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481429903}
   m_CullTransparentMesh: 1
+--- !u!1 &484594722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484594724}
+  - component: {fileID: 484594723}
+  m_Layer: 0
+  m_Name: MoneyClicker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &484594723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484594722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c7a4f3f8f8a164c86d9ad69ba4c38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyClicker
+  resourceManager: {fileID: 0}
+  image: {fileID: 0}
+  incomePerClick: 0
+  fillPerClick: 0
+--- !u!4 &484594724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484594722}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 619.9369, y: 317.27042, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487995783
 GameObject:
   m_ObjectHideFlags: 0
@@ -11090,6 +11246,7 @@ GameObject:
   - component: {fileID: 1122633006}
   - component: {fileID: 1122633008}
   - component: {fileID: 1122633007}
+  - component: {fileID: 1122633009}
   m_Layer: 5
   m_Name: Helicopter_Panel
   m_TagString: Untagged
@@ -11160,6 +11317,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122633005}
   m_CullTransparentMesh: 1
+--- !u!114 &1122633009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122633005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
+  resourceManager: {fileID: 0}
+  unlockButton: {fileID: 0}
+  lockPanel: {fileID: 0}
+  cost: 0
+  costText: {fileID: 0}
 --- !u!1 &1145356273
 GameObject:
   m_ObjectHideFlags: 0
@@ -14042,6 +14216,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386984396}
   m_CullTransparentMesh: 1
+--- !u!1 &1400389647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1400389648}
+  - component: {fileID: 1400389649}
+  m_Layer: 0
+  m_Name: UpgradeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1400389648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400389647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 659.19934, y: 405.1008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1400389649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400389647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
+  resourceManager: {fileID: 0}
+  unlockButton: {fileID: 0}
+  lockPanel: {fileID: 0}
+  cost: 0
+  costText: {fileID: 0}
 --- !u!1 &1409494144
 GameObject:
   m_ObjectHideFlags: 0
@@ -15128,6 +15351,7 @@ GameObject:
   - component: {fileID: 1463240641}
   - component: {fileID: 1463240640}
   - component: {fileID: 1463240643}
+  - component: {fileID: 1463240644}
   m_Layer: 5
   m_Name: 1UP_btn
   m_TagString: Untagged
@@ -15251,6 +15475,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangePanel
   currentPanel: {fileID: 0}
   newPanel: {fileID: 0}
+--- !u!114 &1463240644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463240638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9580ff415b3eea49b49db53a05f9909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickUpgrade
+  resourceManager: {fileID: 1644739514}
+  moneyClicker: {fileID: 1930813849}
+  cost: 10
+  addedIncome: 1
+  costText: {fileID: 1483213289}
 --- !u!1 &1483213287
 GameObject:
   m_ObjectHideFlags: 0
@@ -15286,7 +15527,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 33.7414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483213289
 MonoBehaviour:
@@ -15308,7 +15549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0440\u043E\u043A\u0430\u0447\u043A\u0430"
+  m_text: "\u041F\u0440\u043E\u043A\u0430\u0447\u043A\u0430\n10"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17779,7 +18020,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1748334951}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1748334951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20400,7 +20653,7 @@ MonoBehaviour:
   resourceManager: {fileID: 1644739514}
   image: {fileID: 1930813847}
   incomePerClick: 5
-  fillPerClick: 0.1
+  fillPerClick: 0.25
 --- !u!1 &1942814548
 GameObject:
   m_ObjectHideFlags: 0
@@ -22552,6 +22805,7 @@ GameObject:
   - component: {fileID: 2143161812}
   - component: {fileID: 2143161811}
   - component: {fileID: 2143161814}
+  - component: {fileID: 2143161815}
   m_Layer: 5
   m_Name: 10UP_btn
   m_TagString: Untagged
@@ -22675,6 +22929,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangePanel
   currentPanel: {fileID: 0}
   newPanel: {fileID: 0}
+--- !u!114 &2143161815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143161809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9580ff415b3eea49b49db53a05f9909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickUpgrade
+  resourceManager: {fileID: 1644739514}
+  moneyClicker: {fileID: 1930813849}
+  cost: 100
+  addedIncome: 10
+  costText: {fileID: 378395486}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -22687,3 +22958,5 @@ SceneRoots:
   - {fileID: 306505324}
   - {fileID: 1644739515}
   - {fileID: 50834001}
+  - {fileID: 1400389648}
+  - {fileID: 484594724}

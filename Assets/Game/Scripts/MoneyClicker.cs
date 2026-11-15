@@ -1,37 +1,40 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MoneyClicker : MonoBehaviour
 {
     [SerializeField] private ResourceManager resourceManager;
-    [SerializeField] private Image image;
-    [SerializeField] private int incomePerClick;
-    [SerializeField] private float fillPerClick;
+    [SerializeField] private int incomePerClick = 1;
     private Button button;
-    private void Start()
+
+    private void Awake()
     {
         button = GetComponent<Button>();
-        button.onClick.AddListener(Clicker);
+    }
 
+    private void OnEnable()
+    {
+        if (button != null)
+        {
+            button.onClick.AddListener(Clicker);
+        }
     }
 
     private void Clicker()
     {
-        if (image.fillAmount >= 1)
-        {
-            image.fillAmount = 0;
-            resourceManager.ChangeMoney(incomePerClick);
-        }
-        else
-        {
-            image.fillAmount += fillPerClick;
-            
-        }
+        resourceManager.ChangeMoney(incomePerClick);
+    }
+
+    public void ChangeIncome(int addedIncome)
+    {
+        incomePerClick += addedIncome;
     }
 
     private void OnDisable()
     {
-        button.onClick.RemoveAllListeners();
+        if (button != null)
+        {
+            button.onClick.RemoveListener(Clicker);
+        }
     }
 }
