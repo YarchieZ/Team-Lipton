@@ -386,7 +386,7 @@ MonoBehaviour:
   resourceManager: {fileID: 1644739514}
   unlockButton: {fileID: 1748334950}
   lockPanel: {fileID: 1960560138}
-  cost: 1
+  cost: 250000
   costText: {fileID: 581521917}
 --- !u!1 &93354623
 GameObject:
@@ -1050,11 +1050,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
-  resourceManager: {fileID: 0}
-  unlockButton: {fileID: 0}
-  lockPanel: {fileID: 0}
-  cost: 0
-  costText: {fileID: 0}
+  resourceManager: {fileID: 1644739514}
+  unlockButton: {fileID: 300080392}
+  lockPanel: {fileID: 185098729}
+  cost: 500000
+  costText: {fileID: 1364922358}
 --- !u!1 &154249227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClickUpgrade
   resourceManager: {fileID: 1644739514}
   moneyClicker: {fileID: 1930813849}
-  cost: 600
+  cost: 1000
   addedIncome: 100
   costText: {fileID: 385822366}
 --- !u!1 &185098729
@@ -3079,6 +3079,7 @@ RectTransform:
   - {fileID: 487995784}
   - {fileID: 1345728747}
   - {fileID: 1942814549}
+  - {fileID: 809432437}
   m_Father: {fileID: 375714114}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3136,11 +3137,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
-  resourceManager: {fileID: 0}
-  unlockButton: {fileID: 0}
-  lockPanel: {fileID: 0}
-  cost: 0
-  costText: {fileID: 0}
+  resourceManager: {fileID: 1644739514}
+  unlockButton: {fileID: 833437699}
+  lockPanel: {fileID: 1942814548}
+  cost: 1000000
+  costText: {fileID: 154419628}
 --- !u!1 &259483928
 GameObject:
   m_ObjectHideFlags: 0
@@ -3932,10 +3933,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
   resourceManager: {fileID: 1644739514}
-  unlockButton: {fileID: 0}
-  lockPanel: {fileID: 0}
-  cost: 0
-  costText: {fileID: 0}
+  unlockButton: {fileID: 690638145}
+  lockPanel: {fileID: 1700868235}
+  cost: 100000000
+  costText: {fileID: 1668393735}
 --- !u!1 &336002676
 GameObject:
   m_ObjectHideFlags: 0
@@ -5192,10 +5193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
   resourceManager: {fileID: 1644739514}
-  unlockButton: {fileID: 0}
+  unlockButton: {fileID: 2018240014}
   lockPanel: {fileID: 1960560138}
-  cost: 250000
-  costText: {fileID: 0}
+  cost: 2500000
+  costText: {fileID: 1092778844}
 --- !u!1 &467854329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5656,9 +5657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyClicker
   resourceManager: {fileID: 0}
-  image: {fileID: 0}
   incomePerClick: 0
-  fillPerClick: 0
 --- !u!4 &484594724
 Transform:
   m_ObjectHideFlags: 0
@@ -8683,11 +8682,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1528557722}
+  m_Father: {fileID: 255872874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 847, y: 315}
+  m_AnchoredPosition: {x: 72.69983, y: 32.299927}
   m_SizeDelta: {x: 157.9306, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809432438
@@ -11329,11 +11328,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c300d3d0a767cd4d9bc7d294ae4cc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgraderManager
-  resourceManager: {fileID: 0}
-  unlockButton: {fileID: 0}
-  lockPanel: {fileID: 0}
-  cost: 0
-  costText: {fileID: 0}
+  resourceManager: {fileID: 1644739514}
+  unlockButton: {fileID: 596785708}
+  lockPanel: {fileID: 2076311563}
+  cost: 5000000
+  costText: {fileID: 105124248}
 --- !u!1 &1145356273
 GameObject:
   m_ObjectHideFlags: 0
@@ -16011,7 +16010,6 @@ RectTransform:
   m_Children:
   - {fileID: 336002677}
   - {fileID: 2018240013}
-  - {fileID: 809432437}
   - {fileID: 1826273602}
   m_Father: {fileID: 467339857}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20071,7 +20069,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'AS: 300'
+  m_text: 'AS: 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20625,7 +20623,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -20651,9 +20649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyClicker
   resourceManager: {fileID: 1644739514}
-  image: {fileID: 1930813847}
   incomePerClick: 5
-  fillPerClick: 0.25
 --- !u!1 &1942814548
 GameObject:
   m_ObjectHideFlags: 0
@@ -22943,7 +22939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClickUpgrade
   resourceManager: {fileID: 1644739514}
   moneyClicker: {fileID: 1930813849}
-  cost: 100
+  cost: 500
   addedIncome: 10
   costText: {fileID: 378395486}
 --- !u!1660057539 &9223372036854775807
