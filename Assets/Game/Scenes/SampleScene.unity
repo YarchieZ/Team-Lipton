@@ -1375,7 +1375,7 @@ MonoBehaviour:
   unlockButton: {fileID: 300080392}
   lockPanel: {fileID: 185098729}
   cost: 100000
-  costText: {fileID: 1364922358}
+  costText: {fileID: 214553045}
 --- !u!1 &154249227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +1799,7 @@ GameObject:
   - component: {fileID: 161504330}
   - component: {fileID: 161504329}
   - component: {fileID: 161504328}
+  - component: {fileID: 161504331}
   m_Layer: 5
   m_Name: Buy_btn
   m_TagString: Untagged
@@ -1908,6 +1909,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161504326}
   m_CullTransparentMesh: 1
+--- !u!114 &161504331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161504326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f677c0da087593c4699d91bdf2f83ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitBuy
+  resourceManager: {fileID: 1644739514}
+  resourceType: 3
+  cost: 550000
+  addForce: 1
+  forceAmount: 750
 --- !u!1 &162275026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,7 +3616,7 @@ MonoBehaviour:
   unlockButton: {fileID: 833437699}
   lockPanel: {fileID: 1942814548}
   cost: 100000
-  costText: {fileID: 154419628}
+  costText: {fileID: 859400617}
 --- !u!1 &259483928
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,6 +3826,7 @@ GameObject:
   - component: {fileID: 267922060}
   - component: {fileID: 267922059}
   - component: {fileID: 267922058}
+  - component: {fileID: 267922061}
   m_Layer: 5
   m_Name: Buy_btn
   m_TagString: Untagged
@@ -3917,6 +3936,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267922056}
   m_CullTransparentMesh: 1
+--- !u!114 &267922061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267922056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f677c0da087593c4699d91bdf2f83ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitBuy
+  resourceManager: {fileID: 0}
+  resourceType: 0
+  cost: 2000000
+  addForce: 1
+  forceAmount: 2000
 --- !u!1 &276644082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,7 +4703,7 @@ MonoBehaviour:
   unlockButton: {fileID: 690638145}
   lockPanel: {fileID: 1700868235}
   cost: 2000000
-  costText: {fileID: 1668393735}
+  costText: {fileID: 1886242438}
 --- !u!1 &334938888
 GameObject:
   m_ObjectHideFlags: 0
@@ -5660,6 +5696,7 @@ GameObject:
   - component: {fileID: 429144867}
   - component: {fileID: 429144866}
   - component: {fileID: 429144865}
+  - component: {fileID: 429144868}
   m_Layer: 5
   m_Name: Buy_btn
   m_TagString: Untagged
@@ -5769,6 +5806,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429144863}
   m_CullTransparentMesh: 1
+--- !u!114 &429144868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429144863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f677c0da087593c4699d91bdf2f83ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitBuy
+  resourceManager: {fileID: 1644739514}
+  resourceType: 2
+  cost: 100000
+  addForce: 1
+  forceAmount: 100
 --- !u!1 &443693256
 GameObject:
   m_ObjectHideFlags: 0
@@ -6781,6 +6835,7 @@ GameObject:
   - component: {fileID: 487995787}
   - component: {fileID: 487995786}
   - component: {fileID: 487995785}
+  - component: {fileID: 487995788}
   m_Layer: 5
   m_Name: Buy_btn (1)
   m_TagString: Untagged
@@ -6890,6 +6945,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487995783}
   m_CullTransparentMesh: 1
+--- !u!114 &487995788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487995783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f677c0da087593c4699d91bdf2f83ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitBuy
+  resourceManager: {fileID: 1644739514}
+  resourceType: 6
+  cost: 400000
+  addForce: 1
+  forceAmount: 300
 --- !u!1 &505345670
 GameObject:
   m_ObjectHideFlags: 0
@@ -10972,7 +11044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &930214417
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12825,7 +12897,7 @@ MonoBehaviour:
   unlockButton: {fileID: 596785708}
   lockPanel: {fileID: 2076311563}
   cost: 1500000
-  costText: {fileID: 105124248}
+  costText: {fileID: 241481012}
 --- !u!1 &1145356273
 GameObject:
   m_ObjectHideFlags: 0
@@ -20210,6 +20282,8 @@ MonoBehaviour:
   resourceManager: {fileID: 1644739514}
   resourceType: 1
   cost: 1000
+  addForce: 1
+  forceAmount: 1
 --- !u!1 &1649787936
 GameObject:
   m_ObjectHideFlags: 0
@@ -21953,6 +22027,7 @@ GameObject:
   - component: {fileID: 1844284177}
   - component: {fileID: 1844284176}
   - component: {fileID: 1844284175}
+  - component: {fileID: 1844284178}
   m_Layer: 5
   m_Name: Buy_btn
   m_TagString: Untagged
@@ -22062,6 +22137,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844284173}
   m_CullTransparentMesh: 1
+--- !u!114 &1844284178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844284173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f677c0da087593c4699d91bdf2f83ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitBuy
+  resourceManager: {fileID: 1644739514}
+  resourceType: 4
+  cost: 1500000
+  addForce: 1
+  forceAmount: 1000
 --- !u!1 &1845453603
 GameObject:
   m_ObjectHideFlags: 0
@@ -22776,7 +22868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1882512838
 RectTransform:
   m_ObjectHideFlags: 0

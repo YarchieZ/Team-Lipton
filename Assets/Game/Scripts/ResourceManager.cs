@@ -73,7 +73,7 @@ public class ResourceManager : MonoBehaviour
         if (resources.ContainsKey(resourceType))
         {
             resources[resourceType].Force += value;
-            uiManager.UpdateUILevel(resourceType, resources[resourceType].Force);
+            uiManager.UpdateUIForce(resourceType, resources[resourceType].Force);
         }
     }
     public int GetForce(ResourceType resourceType)

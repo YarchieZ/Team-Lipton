@@ -62,6 +62,7 @@ public class UImanager : MonoBehaviour
         {
             if (selectedType == item.type)
             {
+                
                 if (item.textForce == null)
                     return;
                 if (item.stringForce != null)

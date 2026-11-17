@@ -6,6 +6,8 @@ public class UnitBuy : MonoBehaviour
     [SerializeField] ResourceManager resourceManager;
     [SerializeField] ResourceType resourceType;
     [SerializeField] private int cost;
+    [SerializeField] private bool addForce;
+    [SerializeField] private int forceAmount;
     
     private Button buyButton;
 
@@ -17,10 +19,14 @@ public class UnitBuy : MonoBehaviour
 
     private void OnBuy()
     {
-        if (cost < resourceManager.GetResource(ResourceType.Money))
+        if (cost <= resourceManager.GetResource(ResourceType.Money))
         {
             resourceManager.AddResource(ResourceType.Money, -cost);
             resourceManager.AddResource(resourceType, 1);
+            if (addForce)
+            {
+                resourceManager.AddForce(resourceType, forceAmount);
+            }
         }
     }
 
