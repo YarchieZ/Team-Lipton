@@ -9,9 +9,7 @@ public class UpgraderManager : MonoBehaviour
     [SerializeField] private GameObject lockPanel;            // панелька разблокировки
 
     [SerializeField] private int cost;                        // цена для разблокировки
-    [SerializeField] private TextMeshProUGUI costText;
-    //[SerializeField] private int multiIncomeBonus;            // крат для прокачки апгрейдов: 1x, 10x, 50x и т.д.
-    //[SerializeField] private int MFS;                         // деньги в секунду (для заводов)
+    [SerializeField] private TextMeshProUGUI costText; 
 
     private void Start()
     {
@@ -29,9 +27,9 @@ public class UpgraderManager : MonoBehaviour
 
     public void Unlock()
     {
-        if (resourceManager.Money >= cost)
+        if (resourceManager.GetResource(ResourceType.Money) >= cost)
         {
-            resourceManager.ChangeMoney(-cost);
+            resourceManager.AddResource(ResourceType.Money, -cost);
             if (lockPanel != null)
             {
                 lockPanel.SetActive(false);

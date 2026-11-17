@@ -408,8 +408,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UImanager
   units:
   - type: 0
-    stringValue: 
-    textUI: {fileID: 505345672}
+    stringAmount: 
+    stringLevel: 
+    stringForce: 
+    textAmount: {fileID: 505345672}
+    textLevel: {fileID: 0}
+    textForce: {fileID: 0}
+  - type: 1
+    stringAmount: "\u041F\u0435\u0445\u043E\u0442\u0430 - "
+    stringLevel: ' '
+    stringForce: "\u0421\u0438\u043B\u0430 - "
+    textAmount: {fileID: 38860621}
+    textLevel: {fileID: 0}
+    textForce: {fileID: 158280408}
+  - type: 3
+    stringAmount: "\u0417\u0435\u043D\u0438\u0442\u043A\u0438 - "
+    stringLevel: ' '
+    stringForce: "\u0421\u0438\u043B\u0430 - "
+    textAmount: {fileID: 2055495373}
+    textLevel: {fileID: 0}
+    textForce: {fileID: 1484499703}
+  - type: 2
+    stringAmount: "\u0414\u0440\u043E\u043D\u044B - "
+    stringLevel: "\u0421\u0438\u043B\u0430 - "
+    stringForce: 
+    textAmount: {fileID: 1267542533}
+    textLevel: {fileID: 0}
+    textForce: {fileID: 307892779}
+  - type: 6
+    stringAmount: "\u041F\u0412\u041E - "
+    stringLevel: ' '
+    stringForce: "\u0421\u0438\u043B\u0430 - "
+    textAmount: {fileID: 1434617474}
+    textLevel: {fileID: 0}
+    textForce: {fileID: 1826593014}
+  - type: 4
+    stringAmount: "\u0412\u0435\u0440\u0442\u043E\u043B\u0435\u0442\u044B - "
+    stringLevel: ' '
+    stringForce: "\u0421\u0438\u043B\u0430 - "
+    textAmount: {fileID: 426253527}
+    textLevel: {fileID: 0}
+    textForce: {fileID: 2039988506}
+  - type: 5
+    stringAmount: "\u0412\u043E\u0435\u043D\u043D\u044B\u0435 \u043A\u043E\u0440\u0430\u0431\u043B\u0438
+      - "
+    stringLevel: ' '
+    stringForce: "\u0421\u0438\u043B\u0430 - "
+    textAmount: {fileID: 1450626340}
+    textLevel: {fileID: 0}
+    textForce: {fileID: 334938890}
 --- !u!4 &50834001
 Transform:
   m_ObjectHideFlags: 0
@@ -1327,7 +1374,7 @@ MonoBehaviour:
   resourceManager: {fileID: 1644739514}
   unlockButton: {fileID: 300080392}
   lockPanel: {fileID: 185098729}
-  cost: 500000
+  cost: 100000
   costText: {fileID: 1364922358}
 --- !u!1 &154249227
 GameObject:
@@ -19979,6 +20026,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResourceManager
   uiManager: {fileID: 50834000}
+  resourcesMassive:
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
+  - Amount: 0
+    Level: 1
+    Force: 0
 --- !u!4 &1644739515
 Transform:
   m_ObjectHideFlags: 0
@@ -20006,6 +20084,7 @@ GameObject:
   - component: {fileID: 1646795225}
   - component: {fileID: 1646795224}
   - component: {fileID: 1646795223}
+  - component: {fileID: 1646795226}
   m_Layer: 5
   m_Name: Buy_btn
   m_TagString: Untagged
@@ -20115,6 +20194,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646795221}
   m_CullTransparentMesh: 1
+--- !u!114 &1646795226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646795221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f677c0da087593c4699d91bdf2f83ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitBuy
+  resourceManager: {fileID: 1644739514}
+  resourceType: 1
+  cost: 500
 --- !u!1 &1649787936
 GameObject:
   m_ObjectHideFlags: 0
@@ -23654,7 +23748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyClicker
   resourceManager: {fileID: 1644739514}
-  incomePerClick: 1
+  incomePerClick: 10000
 --- !u!1 &1942814548
 GameObject:
   m_ObjectHideFlags: 0

@@ -34,9 +34,9 @@ public class ClickUpgrade : MonoBehaviour
 
     public void BuyClickUpgrade()
     {
-        if (resourceManager.Money >= cost)
+        if (resourceManager.GetResource(ResourceType.Money) >= cost)
         {
-            resourceManager.ChangeMoney(-cost);
+            resourceManager.AddResource(ResourceType.Money, -cost);
             moneyClicker.ChangeIncome(addedIncome);
         }
     }

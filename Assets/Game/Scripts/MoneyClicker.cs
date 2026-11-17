@@ -22,7 +22,7 @@ public class MoneyClicker : MonoBehaviour
 
     private void Clicker()
     {
-        resourceManager.ChangeMoney(incomePerClick);
+        resourceManager.AddResource(ResourceType.Money, incomePerClick);
     }
 
     public void ChangeIncome(int addedIncome)
